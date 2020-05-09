@@ -7,7 +7,7 @@ body {
 
 .App {
   text-align: justify;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .smarthome{
@@ -72,6 +72,17 @@ p{
   float: right;
 }
 
+.imgRoom{
+  width: 32%;
+  margin-bottom: 2%;
+  margin-left: 20%;
+  margin-top: 2%;
+}
+
+.Rooms{
+  margin-top: 5%;
+}
+
 @media screen and (max-width: 700px){
 
   .img
@@ -124,5 +135,15 @@ p{
   .crd{
     float: none;
   }
-  
+  .imgRoom{
+    width: 70%;
+    margin-top: 10%;
+    margin-bottom: 40%;
+    margin-left: 15%;
+  }
+
+  .Rooms{
+    margin-top: 20%;
+  }
+
   }
