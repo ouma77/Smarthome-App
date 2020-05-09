@@ -14,7 +14,7 @@ const Landing = () => (
     </div>
 
     <div className='btnStart'>
-         <a><Button type="primary">Get Started</Button></a>
+         <a><Button type="primary" shape="round">Get Started</Button></a>
     </div>
   </div>
 );

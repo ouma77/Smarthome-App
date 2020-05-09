@@ -7,6 +7,7 @@ body {
 
 .App {
   text-align: justify;
+  font-weight: 700;
 }
 
 .smarthome{
@@ -15,7 +16,7 @@ body {
 }
 
 p{
-  font-weight: 600;
+  font-weight: 700;
   font-size: medium;
 }
 
@@ -23,21 +24,40 @@ p{
   float: left;
   padding: 20% 0% 20% 10%;
 }
-.btnStart{
-  float: left;
-  margin-top: -20%;
-  margin-left: 10%;
-}
+
 
 .smartH_img{
   float: right;
 }
+
 .img
 {
     width: 40%;
     height: auto;
     margin-left: 45%;
     margin-top: -50%;
+}
+.btnStart{
+  float: left;
+  margin-top: -20%;
+  margin-left: 10%;
+}
+
+.imgkey{
+  width: 47%;
+  height: auto;
+  margin-top: 20%; 
+  margin-left: 40%;
+}
+
+.right{
+  float: right;
+}
+
+.left{
+  float: left;
+  margin-top: 18%; 
+  margin-left: 10%;
 }
 
 @media screen and (max-width: 700px){
@@ -48,6 +68,13 @@ p{
       height: auto;
       margin-left: 25%;
       margin-top: 0%;
+  }
+
+  .imgkey{
+    width: 55%;
+    height: auto;
+    margin-top: 18%; 
+    margin-left: 25%;
   }
 
   .welcome{
@@ -68,4 +95,12 @@ p{
     margin-left: 0%;
   }
 
+  .left{
+    float: left;
+    margin-top: 12%; 
+    margin-left: 10%;
+  }
+
+
+  
   }
