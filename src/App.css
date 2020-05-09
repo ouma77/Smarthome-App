@@ -1,38 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F9F9F9;
+  font-family: 'Quicksand', sans-serif;
+}
+
 .App {
-  text-align: center;
+  text-align: justify;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.smarthome{
+  color: #007bff;
+  font-weight: 800;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+p{
+  font-weight: 600;
+  font-size: medium;
+}
+
+.welcome{
+  float: left;
+  padding: 20% 0% 20% 10%;
+}
+.btnStart{
+  float: left;
+  margin-top: -20%;
+  margin-left: 10%;
+}
+
+.smartH_img{
+  float: right;
+}
+.img
+{
+    width: 40%;
+    height: auto;
+    margin-left: 45%;
+    margin-top: -50%;
+}
+
+@media screen and (max-width: 700px){
+
+  .img
+  {
+      width: 55%;
+      height: auto;
+      margin-left: 25%;
+      margin-top: 0%;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .welcome{
+    padding: 20% 0% 5% 5%;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .smartH_img{
+      margin-left: -30%;
+      margin-top: 20%;
+      margin-bottom: 14%;
+      margin-right: -24%;
   }
-}
+
+  .btnStart{
+    float: none;
+    text-align: center;
+    margin-top: 0%;
+    margin-left: 0%;
+  }
+
+  }
