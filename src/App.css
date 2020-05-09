@@ -60,6 +60,18 @@ p{
   margin-left: 10%;
 }
 
+.crd{
+  margin: 20% 7% 0 15%;
+}
+
+.crd1{
+  float: left;
+}
+
+.crd2{
+  float: right;
+}
+
 @media screen and (max-width: 700px){
 
   .img
@@ -101,6 +113,16 @@ p{
     margin-left: 10%;
   }
 
-
+  .crd{
+    margin: 20% 0% 0% 8%;
+  }
+  
+  .crd1{
+    float: none;
+  }
+  
+  .crd{
+    float: none;
+  }
   
   }
