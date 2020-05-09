@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button } from 'antd';
 import './App.css';
-import './index.css';
 import Smarthome from './images/home.png';
 
 const Landing = () => (
