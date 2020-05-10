@@ -24,17 +24,17 @@ You will need to change some lines : <br>
 }
 <br>
 <br>
-<i>Then create a <strong>config-overrides.js</strong> at root directory of your project for further overriding.</i>
+<i>Then create a <code>config-overrides.js</code> at root directory of your project for further overriding.</i>
 Inside this code :<br>
 <code>
-const { override, fixBabelImports } = require('customize-cra');
-
-module.exports = override(
-       fixBabelImports('antd', {
-         libraryDirectory: 'es',
-         style: 'css',
-       }),
-);
+const { override, fixBabelImports } = require('customize-cra');<br>
+<br>
+module.exports = override(<br>
+       fixBabelImports('antd', {<br>
+         libraryDirectory: 'es',<br>
+         style: 'css',<br>
+       }),<br>
+);<br>
 </code>
 
 <br> yarn add babel-plugin-import<br>
