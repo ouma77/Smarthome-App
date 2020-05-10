@@ -90,6 +90,11 @@ p{
   margin-left: 5%;
 }
 
+.onOffRoomX{
+  margin-top: -35%;
+  font-size: 18px;
+}
+
 .ant-tabs-nav .ant-tabs-tab{
   margin: 0px 50px 0px 21px;
 }
@@ -97,7 +102,7 @@ p{
 .circle{
   position: relative;
   display: inline-block;
-  margin: 35% 15% 55% 15%;
+  margin: 45% 15% 55% 13%;
   padding: 33% 15%;
   height: 250px;
   width: 250px;

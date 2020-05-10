@@ -1,33 +1,38 @@
 import React, {Component} from 'react';
-import { Tabs,Select} from 'antd';
-import { StickyContainer, Sticky } from 'react-sticky';
+import { Tabs, Switch, Slider  } from 'antd';
+import { StickyContainer} from 'react-sticky';
 import './App.css';
-import lampe from './images/lampe.png';
 
 const { TabPane } = Tabs;
 
-const renderTabBar = (props, DefaultTabBar) => (
-    <Sticky>
-      {({ style }) => (
-        <DefaultTabBar {...props} className="site-custom-tab-bar" style={{ ...style }} />
-      )}
-    </Sticky>
-);
+function onChange(checked) {
+    console.log(`switch to ${checked}`);
+}
 
+function formatter(value) {
+    return `${value}%`;
+  }
 class Rooms extends Component{
     render(){
         return(
             <div className="App">
                 <StickyContainer>
-                <Tabs tabPosition="bottom" defaultActiveKey="1" style={{ marginLeft: 55 }}>
+                <Tabs tabPosition="bottom" defaultActiveKey="1" style={{ marginLeft: 10 }}>
                     <TabPane tab="Temperature" key="1" style={{ height: 572 }}>
                         <div className="circle">Temperature</div>
+                        <center><div className="onOffRoomX">
+                        <Slider tipFormatter={formatter} />
+                        </div></center>
                     </TabPane>
-                    <TabPane tab="Light" key="2">
+
+                    <TabPane tab="Light" key="2" style={{ height: 572 }}>
                         <div className="circle">Light</div>
+                        <center><div className="onOffRoomX">On/Off <Switch  defaultChecked onChange={onChange} /></div></center>
                     </TabPane>
-                    <TabPane tab="Window" key="3">
+
+                    <TabPane tab="Window" key="3" style={{ height: 572 }}>
                         <div className="circle">Window</div>
+                        <center><div className="onOffRoomX">Open/Close <Switch  defaultChecked onChange={onChange} /></div></center>
                     </TabPane>
                 </Tabs>
                 </StickyContainer>
