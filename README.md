@@ -3,7 +3,7 @@ distance un modèle de maison intelligente avec sept services.
 Cette application est basé sur ReactJS et Ant Design en front end
 
 <h1>What to install after cloning the project :</h1>
-install node<br>
+install node files<br>
 npm install -g yarn<br><br>
 npm i react-router-dom<br>
 <br>
