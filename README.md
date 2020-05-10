@@ -14,14 +14,14 @@ yarn add antd<br>
 yarn add react-app-rewired customize-cra<br><br>
 You will need to change some lines : <br>
 /* package.json */<br>
-"scripts": {<br>
--   "start": "react-scripts start",<br>
--   "build": "react-scripts build",<br>
--   "test": "react-scripts test",<br>
-+   "start": "react-app-rewired start",<br>
-+   "build": "react-app-rewired build",<br>
-+   "test": "react-app-rewired test",<br>
-}
+<code>"scripts": {</code><br>
+-   <code>"start": "react-scripts start",</code><br>
+-   <code>"build": "react-scripts build",</code><br>
+-   <code>"test": "react-scripts test",</code><br>
++   <code>"start": "react-app-rewired start",</code><br>
++   <code>"build": "react-app-rewired build",</code><br>
++   <code>"test": "react-app-rewired test",</code><br>
+<code>}
 <br>
 <br>
 <i>Then create a <code>config-overrides.js</code> at root directory of your project for further overriding.</i>
@@ -30,12 +30,12 @@ Inside this code :<br> <br>
 <code>const { override, fixBabelImports } = require('customize-cra');</code>
 
 <br>
-<code>module.exports = override(</code>
-       <code>fixBabelImports('antd', {</code>
-         <code>libraryDirectory: 'es',</code>
-         <code>style: 'css',</code>
-       <code>}),</code>
-<code>);</code>
+<code>module.exports = override(</code><br>
+       <code>fixBabelImports('antd', {</code><br>
+         <code>libraryDirectory: 'es',</code><br>
+         <code>style: 'css',</code><br>
+       <code>}),</code><br>
+<code>);</code><br>
 
 
 <br> yarn add babel-plugin-import<br>
