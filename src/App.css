@@ -7,6 +7,7 @@ body {
 
 .App {
   text-align: justify;
+  font-weight: 800;
 }
 
 .smarthome{
@@ -15,7 +16,7 @@ body {
 }
 
 p{
-  font-weight: 600;
+  font-weight: 700;
   font-size: medium;
 }
 
@@ -23,15 +24,12 @@ p{
   float: left;
   padding: 20% 0% 20% 10%;
 }
-.btnStart{
-  float: left;
-  margin-top: -20%;
-  margin-left: 10%;
-}
+
 
 .smartH_img{
   float: right;
 }
+
 .img
 {
     width: 40%;
@@ -39,6 +37,59 @@ p{
     margin-left: 45%;
     margin-top: -50%;
 }
+.btnStart{
+  float: left;
+  margin-top: -20%;
+  margin-left: 10%;
+}
+
+.imgkey{
+  width: 47%;
+  height: auto;
+  margin-top: 20%; 
+  margin-left: 40%;
+}
+
+.right{
+  float: right;
+}
+
+.left{
+  float: left;
+  margin-top: 18%; 
+  margin-left: 10%;
+}
+
+.crd{
+  margin: 20% 7% 0 15%;
+}
+
+.crd1{
+  float: left;
+}
+
+.crd2{
+  float: right;
+}
+
+.imgRoom{
+  width: 32%;
+  margin-bottom: 2%;
+  margin-left: 20%;
+  margin-top: 2%;
+}
+
+.Rooms{
+  margin-top: 5%;
+}
+
+.onOff{
+  float: right;
+  margin-top: 3%;
+  font-size: 14px;
+  margin-left: 5%;
+}
+
 
 @media screen and (max-width: 700px){
 
@@ -48,6 +99,13 @@ p{
       height: auto;
       margin-left: 25%;
       margin-top: 0%;
+  }
+
+  .imgkey{
+    width: 55%;
+    height: auto;
+    margin-top: 18%; 
+    margin-left: 25%;
   }
 
   .welcome{
@@ -68,4 +126,38 @@ p{
     margin-left: 0%;
   }
 
+  .left{
+    float: left;
+    margin-top: 12%; 
+    margin-left: 10%;
+  }
+
+  .crd{
+    margin: 20% 0% 0% 8%;
+  }
+  
+  .crd1{
+    float: none;
+  }
+  
+  .crd{
+    float: none;
+  }
+  .imgRoom{
+    width: 70%;
+    margin-top: 10%;
+    margin-bottom: 40%;
+    margin-left: 15%;
+  }
+
+  .Rooms{
+    margin-top: 20%;
+  }
+
+  .onOff{
+    float: right;
+    margin-top: 3%;
+    font-size: 13px;
+    margin-left: 0;
+  }
   }
