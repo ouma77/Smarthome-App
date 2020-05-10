@@ -13,14 +13,14 @@ cd smarthome<br>
 yarn add antd<br>
 yarn add react-app-rewired customize-cra<br>
 You will need to change some lines : <br>
-/* package.json */
-"scripts": {
--   "start": "react-scripts start",
--   "build": "react-scripts build",
--   "test": "react-scripts test",
-+   "start": "react-app-rewired start",
-+   "build": "react-app-rewired build",
-+   "test": "react-app-rewired test",
+/* package.json */<br>
+"scripts": {<br>
+-   "start": "react-scripts start",<br>
+-   "build": "react-scripts build",<br>
+-   "test": "react-scripts test",<br>
++   "start": "react-app-rewired start",<br>
++   "build": "react-app-rewired build",<br>
++   "test": "react-app-rewired test",<br>
 }
 <br>
 <i>Then create a config-overrides.js at root directory of your project for further overriding.</i>
