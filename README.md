@@ -21,7 +21,7 @@ You will need to change some lines : <br>
 +   <code>"start": "react-app-rewired start",</code><br> <br>
 +   <code>"build": "react-app-rewired build",</code><br> <br>
 +   <code>"test": "react-app-rewired test",</code><br> <br>
-<code>}<br>
+<code>}</code><br>
 <br>
 <br>
 <i>Then create a <code>config-overrides.js</code> at root directory of your project for further overriding.</i>
