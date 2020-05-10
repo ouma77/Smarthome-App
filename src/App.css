@@ -83,6 +83,14 @@ p{
   margin-top: 5%;
 }
 
+.onOff{
+  float: right;
+  margin-top: 3%;
+  font-size: 14px;
+  margin-left: 5%;
+}
+
+
 @media screen and (max-width: 700px){
 
   .img
@@ -146,4 +154,10 @@ p{
     margin-top: 20%;
   }
 
+  .onOff{
+    float: right;
+    margin-top: 3%;
+    font-size: 13px;
+    margin-left: 0;
+  }
   }
