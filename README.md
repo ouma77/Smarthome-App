@@ -25,6 +25,17 @@ You will need to change some lines : <br>
 <br>
 <br>
 <i>Then create a <strong>config-overrides.js</strong> at root directory of your project for further overriding.</i>
+Inside this code :<br>
+<code>
+const { override, fixBabelImports } = require('customize-cra');
+
+module.exports = override(
+       fixBabelImports('antd', {
+         libraryDirectory: 'es',
+         style: 'css',
+       }),
+);
+</code>
 
 <br> yarn add babel-plugin-import<br>
 npm install react-sticky<br>
