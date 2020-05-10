@@ -7,13 +7,13 @@ import Home from './Home.js';
 import Rooms from './Rooms.js';
 import Setting from './Setting.js';
 import Bedroom from './Bedroom.js';
-
+import Header from './Header.js';
 
 class App extends Component{
   render(){
     return(
       <div className="App">
-        <Bedroom />
+        <Header />
       </div>
     );
   }

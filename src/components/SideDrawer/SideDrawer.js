@@ -11,8 +11,10 @@ if(props.show) {
     return (
 <nav className={drawerClasses}>
     <ul>
-        <li><a href="/">Products</a></li>
-        <li><a href="/">User</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Rooms</a></li>
+        <li><a href="/">Setting</a></li>
+        <li><a href="/">Add a user</a></li>
     </ul>
 </nav>
     );
