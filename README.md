@@ -40,5 +40,10 @@ Inside this code :<br> <br>
 <br> yarn add babel-plugin-import<br>
 npm install react-sticky<br>
 <br>
-<h3>Then run the project :</h3>
+<h3>Runs the app in the development mode:</h3>
 npm start<br>
+
+Open http://localhost:3000 to view it in the browser.<br>
+
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.<br>
