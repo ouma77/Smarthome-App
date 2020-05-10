@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Card, Avatar, Switch, Button } from 'antd';
-import { KeyOutlined,WindowsOutlined,AlertOutlined } from '@ant-design/icons';
+import { KeyOutlined, WindowsOutlined, AlertOutlined } from '@ant-design/icons';
 import './App.css';
 import lampe from './images/lampe.jpg';
 import temperature from './images/temperature.jpg';
