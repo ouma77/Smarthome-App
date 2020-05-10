@@ -29,7 +29,6 @@ Inside this code :<br> <br>
 
 <code>const { override, fixBabelImports } = require('customize-cra');</code>
 
-<br>
 <br><code>module.exports = override(</code><br>
   <br>     <code>fixBabelImports('antd', {</code><br>
   <br>       <code>libraryDirectory: 'es',</code><br>
