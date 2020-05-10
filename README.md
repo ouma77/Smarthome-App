@@ -12,8 +12,20 @@ cd smarthome<br>
 <h3>Install Ant Design files :</h3>
 yarn add antd<br>
 yarn add react-app-rewired customize-cra<br>
+You will need to change some lines : <br>
+/* package.json */
+"scripts": {
+-   "start": "react-scripts start",
+-   "build": "react-scripts build",
+-   "test": "react-scripts test",
++   "start": "react-app-rewired start",
++   "build": "react-app-rewired build",
++   "test": "react-app-rewired test",
+}
+<br>
 <i>Then create a config-overrides.js at root directory of your project for further overriding.</i>
-yarn add babel-plugin-import<br>
+
+<br> yarn add babel-plugin-import<br>
 npm install react-sticky<br>
 <br>
 <h3>Then run the project :</h3>
