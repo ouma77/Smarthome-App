@@ -4,7 +4,7 @@ Cette application est basé sur ReactJS et Ant Design en front end
 
 <h1>What to install after cloning the project :</h1>
 
-iN THE CMD :
+In the CMD :
 Go to the folder and write :
 
 npx create-react-app smarthome
