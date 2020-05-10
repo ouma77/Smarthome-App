@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import './index.css';
-import Landing from './Landing.js'
+import Param from './Header';
+import Header from './Header';
 
-const App = () => (
-  <div className="App">
-    <Landing />
-  </div>
-);
+
+
+
+class App extends Component{
+  render(){
+    return(
+      <div className="App">
+        <Header />
+        
+      </div>
+    );
+  }
+}
 
 export default App;
