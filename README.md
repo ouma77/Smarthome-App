@@ -39,6 +39,7 @@ Inside this code :<br> <br>
 <br>
 <br> yarn add babel-plugin-import<br>
 npm install react-sticky<br>
+npm i rc-animate <br>
 <br>
 <h3>Runs the app in the development mode:</h3>
 npm start<br>
