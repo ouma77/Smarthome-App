@@ -11,12 +11,10 @@ npx create-react-app smarthome<br>
 cd smarthome<br>
 <br>
 <h3>Install Ant Design files :</h3>
-<br>
 yarn add antd<br>
 yarn add react-app-rewired customize-cra<br>
 yarn add babel-plugin-import<br>
 npm install react-sticky<br>
 <br>
 <h3>Then run the project :</h3>
-<br>
 npm start<br>
