@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { NavLink } from 'react-router-dom';
 import { Col, Row,Divider} from 'antd';
 import './App.css';
 import bedroom from './images/bedroom.png';
@@ -20,32 +21,35 @@ class Rooms extends Component{
                </Divider>
                
                <Row>
-                   <Col className="gutter-row" span={12}>     
+                   
+                   <Col className="gutter-row" span={12}>  
+                   <NavLink to="/kitchen"> 
                    <img className="imgRoom" src={kitchen}></img>
+                   </NavLink>
                    </Col>
-
-                   <Col className="gutter-row" span={12}>     
+                   
+                   <Col className="gutter-row" span={12}>    
+                   <NavLink to="/Bedroom"> 
                    <img className="imgRoom" src={bedroom}></img>
+                   </NavLink>
                    </Col>
-
-                   {/* <Col className="gutter-row" span={6}>     
-                   <img className="imgRoom" src={bedroom2}></img>
-                   </Col>
-
-                   <Col className="gutter-row" span={6}>     
-                   <img className="imgRoom" src={livingroom}></img>
-                   </Col> */}
+                   
                 </Row>
 
                 <Row>                   
-
+                
                    <Col className="gutter-row" span={12}>  
+                   <NavLink to="/LivingRoom">
                    <img className="imgRoom" src={livingroom}></img>   
+                   </NavLink>
                    </Col>
-
-                   <Col className="gutter-row" span={12}>     
+                   
+                   <Col className="gutter-row" span={12}>  
+                   <NavLink to="/Bedroom2">  
                    <img className="imgRoom" src={bedroom2}></img>
+                   </NavLink>
                    </Col>
+                   
                 </Row>
             </div>
 

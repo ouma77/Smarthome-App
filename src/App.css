@@ -102,7 +102,7 @@ p{
 .circle{
   position: relative;
   display: inline-block;
-  margin: 45% 15% 55% 13%;
+  margin: 26% 15% 55% 13%;
   padding: 33% 15%;
   height: 250px;
   width: 250px;
@@ -179,6 +179,6 @@ p{
     float: right;
     margin-top: 3%;
     font-size: 13px;
-    margin-left: 0;
+    margin-left: 10px;
   }
   }

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link , NavLink } from 'react-router-dom';
 import { Button } from 'antd';
 import './App.css';
 import Smarthome from './images/home.png';
@@ -16,7 +17,7 @@ class Landing extends Component{
     </div>
 
     <div className='btnStart'>
-         <a><Button type="primary" shape="round">Get Started</Button></a>
+         <Link to="/SignIn"><Button type="primary" shape="round">Get Started</Button></Link>
     </div>
     </div>
     );

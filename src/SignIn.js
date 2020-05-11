@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link , NavLink } from 'react-router-dom';
 import { Form, Input, Button} from 'antd';
 import key from './images/key4.png';
 import './App.css';
@@ -39,7 +40,7 @@ const SignIn = () => (
             
             <center>
             <Form.Item>
-                <Button  type="primary" htmlType="submit">Submit</Button>
+               <Link to="/Home" > <Button  type="primary" htmlType="submit">Submit</Button> </Link> 
             </Form.Item>
             </center>
             
