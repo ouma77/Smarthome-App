@@ -3,11 +3,11 @@ import { Tabs, Switch, Slider  } from 'antd';
 import { StickyContainer} from 'react-sticky';
 import Header from './Header.js';
 import './App.css';
+import kitchenRoom from './images/kitchenRoom.png';
 
 const { TabPane } = Tabs;
 const marks = {
     0: '0°C',
-    26: '26°C',
     37: '37°C',
     100: {
       style: {
@@ -23,13 +23,26 @@ function onChange(checked) {
 
 function formatter(value) {
     return `${value}%`;
-  }
+}
+
 class Rooms extends Component{
     render(){
         return(
             <div className="App">
-                <Header />
-                <StickyContainer>
+                <Header/>
+                <div className="theRight">
+                    <img className="bedroomImg" src={kitchenRoom}/>
+                </div>
+                <div className="theLeft">
+                    <div className="onOffRoomX">
+                        Temperature : <Slider marks={marks} defaultValue={37} />    
+                    </div>
+                    
+                        <div className="onOffRoomX">Light : On/Off <Switch  defaultChecked onChange={onChange} /></div>
+                        <div className="onOffRoomX">Window : Open/Close <Switch  defaultChecked onChange={onChange} /></div>
+                    
+                </div>
+                {/* <StickyContainer>
                 <Tabs tabPosition="bottom" defaultActiveKey="1" style={{ marginLeft: 10 }}>
                     <TabPane tab="Temperature" key="1" style={{ height: 500 }}>
                         <div className="circle">Temperature</div>
@@ -48,7 +61,7 @@ class Rooms extends Component{
                         <center><div className="onOffRoomX">Open/Close <Switch  defaultChecked onChange={onChange} /></div></center>
                     </TabPane>
                 </Tabs>
-                </StickyContainer>
+                </StickyContainer> */}
             </div>     
         );
     }
