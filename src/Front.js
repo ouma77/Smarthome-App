@@ -12,7 +12,7 @@ import Bedroom2 from './Bedroom2.js';
 import LivingRoom from './LivingRoom.js';
 import Kitchen from './kitchen.js';
 
-class App extends Component{
+class Front extends Component{
   render(){
     return(
       <BrowserRouter>
@@ -34,4 +34,4 @@ class App extends Component{
   }
 }
 
-export default App;
+export default Front;

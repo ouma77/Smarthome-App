@@ -11,21 +11,29 @@ class Home extends Component{
       return(
         <div className="App">
           <Header />
-            <div className="crd crd1">
+          {/* <div className="theRight">
+                    <img className="bedroomImg" src={chooseRoom}/>
+                </div> */}
+          <div >
+          
               <NavLink to="/Rooms">
-                <Card title="Rooms" bordered={true} style={{ width: 300 }}>
+                <button className='btn'>Rooms</button>
+                {/* <Card title="Rooms" bordered={true} style={{ width: 300 }}>
                     <img className="img" src={chooseRoom}></img>
-                </Card>
+                </Card> */}
               </NavLink>
-            </div>
+            
     
-            <div className="crd crd2">
+            
               <NavLink to="/Setting">
-                <Card title="Setting" bordered={true} style={{ width: 300 }}>
+              <button className='btn'>Setting</button>
+                {/* <Card title="Setting" bordered={true} style={{ width: 300 }}>
                     <img className="img" src={param}></img>
-                </Card>
+                </Card> */}
               </NavLink>
-            </div>
+            
+          </div>
+            
         </div>
       );
     }
