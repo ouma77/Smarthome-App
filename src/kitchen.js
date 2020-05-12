@@ -1,9 +1,21 @@
 import React, {Component} from 'react';
 import { Tabs, Switch, Slider  } from 'antd';
 import { StickyContainer} from 'react-sticky';
+import Header from './Header.js';
 import './App.css';
 
 const { TabPane } = Tabs;
+const marks = {
+    0: '0°C',
+    26: '26°C',
+    37: '37°C',
+    100: {
+      style: {
+        color: '#f50',
+      },
+      label: <strong>100°C</strong>,
+    },
+  };
 
 function onChange(checked) {
     console.log(`switch to ${checked}`);
@@ -16,12 +28,13 @@ class Rooms extends Component{
     render(){
         return(
             <div className="App">
+                <Header />
                 <StickyContainer>
                 <Tabs tabPosition="bottom" defaultActiveKey="1" style={{ marginLeft: 10 }}>
                     <TabPane tab="Temperature" key="1" style={{ height: 500 }}>
                         <div className="circle">Temperature</div>
                         <center><div className="onOffRoomX">
-                        <Slider tipFormatter={formatter} />
+                        <Slider marks={marks} defaultValue={37} />
                         </div></center>
                     </TabPane>
 

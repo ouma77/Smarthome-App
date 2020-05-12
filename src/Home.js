@@ -3,12 +3,14 @@ import { NavLink } from 'react-router-dom';
 import { Card } from 'antd';
 import './App.css';
 import param from './images/param.png';
+import Header from './Header.js';
 import chooseRoom from './images/chooseRoom.jpg';
 
 class Home extends Component{
     render(){
       return(
         <div className="App">
+          <Header />
             <div className="crd crd1">
               <NavLink to="/Rooms">
                 <Card title="Rooms" bordered={true} style={{ width: 300 }}>

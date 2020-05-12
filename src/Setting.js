@@ -4,7 +4,7 @@ import { KeyOutlined, WindowsOutlined, AlertOutlined } from '@ant-design/icons';
 import './App.css';
 import lampe from './images/lampe.jpg';
 import temperature from './images/temperature.jpg';
-
+import Header from './Header.js';
 function onChange(checked) {
     console.log(`switch to ${checked}`);
 }
@@ -13,6 +13,7 @@ class Setting extends Component{
     render(){
         return(
             <div className="App">
+                <Header />
                 <Card
                 style={{ marginTop: 16 }}
                 type="inner">
