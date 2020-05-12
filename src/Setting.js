@@ -18,7 +18,7 @@ class Setting extends Component{
                 style={{ marginTop: 16 }}
                 type="inner">
                 <Avatar size={40} src={temperature} />
-                Température
+                Weather
                 <div className="onOff">Nuageux</div>
                 </Card>
                 <Card
