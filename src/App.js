@@ -11,7 +11,6 @@ import Bedroom from './Bedroom.js';
 import Bedroom2 from './Bedroom2.js';
 import LivingRoom from './LivingRoom.js';
 import Kitchen from './kitchen.js';
-import Header from './Header.js';
 
 class App extends Component{
   render(){
