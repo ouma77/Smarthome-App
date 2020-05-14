@@ -20,6 +20,11 @@ p{
   font-size: medium;
 }
 
+.titleroom{
+  color: #007bff;
+  font-weight: 700;
+  font-size: 17px;
+}
 .welcome{
   float: left;
   padding: 20% 0% 20% 10%;
@@ -130,19 +135,49 @@ p{
 }
 
 .btn{
-  padding: 10% 16%;
-  margin-top: 10%;
-  margin-left: 10%;
-  background-color: #007bff;
-  color: #F9F9F9;
-  font-size: 20px;
-  border: 2px solid #007bff;
+  padding: 0.5% 2%;
+  margin-top: 1%;
+  margin-left: 4%;
+  background-color: #F9F9F9;
+  color: #007bff;
+  border: 2px solid #F9F9F9;
   border-radius: 20px;
   box-shadow: 0px 10px 50px -10px rgba(0, 0, 0, 0.2);
 }
 
+.home{
+  background-image: url("./images/homeBG.jpg");
+  height: 750px;
+}
+
+.home h1{
+  font-weight: 900;
+  color: #F9F9F9;
+}
+.home p{
+  font-weight: 600;
+  color: #F9F9F9;
+}
+
+.hometext{
+  padding-top: 16%;
+  padding-left: 4%;
+}
+
 @media screen and (max-width: 700px){
 
+  .home{
+    background-image: none;
+  }
+  .home h1{
+    display: none;
+  }
+  .home p{
+    display: none;
+  }
+  .hometext{
+    display: none;
+  }
   .img
   {
       width: 55%;
@@ -233,15 +268,20 @@ p{
   }
 
   .btn{
-    padding: 20% 33%;
+    padding: 14% 32%;
     margin-top: 15%;
     margin-left: 8%;
-    background-color: #007bff;
-    color: #F9F9F9;
-    font-size: 20px;
-    border: 2px solid #007bff;
-    border-radius: 20px;
+    background-color: #F9F9F9;
+    color: #007bff;
+    border: 2px solid #F9F9F9;
+    border-radius: 35px;
     box-shadow: 0px 10px 50px -10px rgba(0, 0, 0, 0.2);
+  }
+
+  .titleroom{
+    color: #007bff;
+    font-weight: 700;
+    font-size: 20px;
   }
   
   }
